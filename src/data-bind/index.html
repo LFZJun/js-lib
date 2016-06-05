@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bind</title>
+</head>
+
+<body>
+<div class="app">
+    <input l-model="value" type="text">
+    <div l-text="value"></div>
+</div>
+<script src="L.js"></script>
+<script>
+    var foo = L({
+        el: '.app',
+        data: {
+            value: "foo"
+        }
+    });
+</script>
+</body>
+
+</html>
